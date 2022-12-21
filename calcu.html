@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Dynamic Page - Calculator </title>
+    <style>
+        h1 {
+            text-align: center;
+            padding: 23px;
+            background-color: skyblue;
+            color: white;
+            }
+
+        .equal{
+            width: 280px;
+            border: 0px ;
+            border-radius: 15px;
+            padding: 0px 0px 0px 0px ;
+            background-color: red;
+            text-align: center;
+            margin-left: 14px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .formstyle {
+            width: 310px;
+            height: 590px;
+            border-radius: 20px;
+            background-color: #CBF0FD;
+            padding: 5px;
+            margin: 200px 0px 0px 770px;
+        }
+
+        input{
+            width: 60px;
+            height: 60px;
+            padding: 21px 0px 33px 0px ;
+            background-color: #06C1FF;
+            color: white;
+            border-radius: 15px;
+            margin: 10px 0px 0px 10px;
+            border: 0px;
+            font-size: 20px;
+            text-align: center;
+            font-family: Arial;
+            cursor: pointer;
+
+        }
+
+        .calc{
+            width: 81%;
+            height: 50px;
+            background-color: #CBF0FD;
+            padding: 20px;
+            margin-top: 110px;
+            color: #1A374D;
+            font-size: 60px;
+            font-family: Arial;
+            text-align: right;
+        }
+
+        .input{
+            margin: 0px 0px 0px 14px;
+        }
+
+        body{
+            background-image: url("pictures/Wallpaper.png");
+            background-size: cover;
+        }
+
+        </style>
+
+</head>
+<body>
+    <div class= "formstyle">
+        <form name = "form1">
+              <input class= "calc" type ="text" name = "answer"> <br> <br>
+
+              <input  class="input" type = "button" value = "7" onclick = "form1.answer.value += '7' ">
+              <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">
+              <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">
+              <input type = "button" value = "C" onclick = "form1.answer.value = ' ' " style="background-color: #FD5D5D;">
+             
+              <br>
+
+              <input class="input" type = "button" value = "4" onclick = "form1.answer.value += '4' ">
+              <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">
+              <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">
+              <input type = "button" value = "/" onclick = "form1.answer.value += '/' " style="background-color: #FFD36E;">
+              
+              <br>
+
+              <input class="input" type = "button" value = "1" onclick = "form1.answer.value += '1' ">
+              <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">
+              <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">
+              <input type = "button" value = "*" onclick = "form1.answer.value += '*' " style="background-color: #FFD36E;">
+              
+              <br>
+              
+             <input class="input" type = "button" value = "." onclick = "form1.answer.value += '.' ">
+             <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">
+             <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">
+             <input type = "button" value = "-" onclick = "form1.answer.value += '-' " style="background-color: #FFD36E;">   
+             <br>
+
+             <input class="equal" type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) " style="background-color: #85C88A;">
+             <br><br> 
+        </form>
+    </div>
+</body>
+</html>
